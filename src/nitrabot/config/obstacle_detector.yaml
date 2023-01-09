@@ -1,0 +1,5 @@
+obstacle_extractor:
+  use_scan: true
+  use_pcl: false
+  min_group_points: 3
+  max_group_distance: 0.05

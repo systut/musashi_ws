@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- <node pkg="laser_filters" type="scan_to_scan_filter_chain"
+    name="laser_filter">
+    <rosparam command="load" file="my_laser_config.yaml" />
+    </node> -->
+  <!-- Launch Enocks offline trajectory -->
+  <node name="offline_trajectory_node" pkg="trajectory_generation" type="generate_trajectory" output="screen"/>
+
+  <node name="laser2cloud" pkg="nitra_robot" type="laserscan2pointcloud" output="screen"/>
+
+</launch>

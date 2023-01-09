@@ -1,0 +1,3 @@
+<launch>
+  <node name="robot_communication" pkg="robot_communication" type="robot_com.py" output="screen"/>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+  <node name="front_obstacle_detection_node" pkg="perception" type="front_obstacle_detection_node" output="screen"/>
+</launch>
