@@ -9,9 +9,9 @@ sudo apt-get install -y python3-wstool python3-rosdep ninja-build stow
 
 wait
 
-mkdir ./../cartographer_ws
+mkdir ./../../cartographer_ws
 
-cd ./../cartographer_ws
+cd ./../../cartographer_ws
 
 wstool init src
 
