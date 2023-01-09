@@ -1,5 +1,5 @@
 # Exit immediately if a command exits with a non-zero status
-set -e 
+set -x
 
 # Install cartographer
 
@@ -33,12 +33,12 @@ rosdep update
 
 #rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
 
+wait
+
 src/cartographer/scripts/install_abseil.sh
-
-#wait
-
-#sudo apt-get remove ros-${ROS_DISTRO}-abseil-cpp
 
 wait
 
-cd ./../cartographer_ws && catkin_make_isolated --install --use-ninja
+#sudo apt-get remove ros-${ROS_DISTRO}-abseil-cpp
+
+catkin_make_isolated --install --use-ninja
