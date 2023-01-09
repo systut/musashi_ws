@@ -4,6 +4,6 @@ set -e
 # clone rplidar_ros
 repository_rplidar="https://github.com/Slamtec/rplidar_ros.git"
 
-localFolder_rplidar="src/rplidar_ros"
+localFolder_rplidar="../src/rplidar_ros"
 
 git clone "$repository_rplidar" "$localFolder_rplidar"
